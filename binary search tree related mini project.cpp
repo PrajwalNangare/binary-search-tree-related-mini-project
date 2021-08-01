@@ -183,14 +183,14 @@ int main()
 	{
 	cout<<"*******Welcome to the binary search tree based project*******"<<endl;
 	cout<<"Create  binary search tree"<<endl;
-	cout<<"the inorder of the binary search tree is"<<endl;
-	cout<<"count total node in given binary search tree is"<<endl;
-	cout<<"count zero child node in given binary search tree is"<<endl;
-	cout<<"count one child node in given binary search tree is"<<endl;
-	cout<<"count two child node in given binary search tree is"<<endl;
-	cout<<"count both one and two node in given binary search tree is"<<endl;
-	cout<<"the preorder of the given binary search tree is:"<<endl;
-	cout<<"the postorder of the given binary search tree is:"<<endl;
+	cout<<"the inorder of the binary search tree"<<endl;
+	cout<<"count total node in given binary search tree"<<endl;
+	cout<<"count zero child node in given binary search tree"<<endl;
+	cout<<"count one child node in given binary search tree"<<endl;
+	cout<<"count two child node in given binary search tree"<<endl;
+	cout<<"count both one and two node in given binary search tree"<<endl;
+	cout<<"the preorder of the given binary search tree"<<endl;
+	cout<<"the postorder of the given binary search tree"<<endl;
 	cout<<"Exit"<<endl;
 	cout<<"----------------------------"<<endl;
 	int choice;
