@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-struct Node
+struct Node 
 {
 	public:
 	int data;
