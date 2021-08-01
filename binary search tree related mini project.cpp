@@ -67,8 +67,8 @@ int CountTotalNodeInGivenBinarySearchTree(struct Node* ptr)
 	}
 	else
 	{
-		x=CountTotalNodeInGivenTree(ptr->lchild);
-		y=CountTotalNodeInGivenTree(ptr->rchild);
+		x=CountTotalNodeInGivenBinarySearchTree(ptr->lchild);
+		y=CountTotalNodeInGivenBinarySearchTree(ptr->rchild);
 		return x+y+1;
 	}
 }
