@@ -8,7 +8,7 @@ struct Node
 	struct Node* rchild;
 };
 struct Node* root=NULL;
-void create_bst(int Key)
+void create_binarysearchtree(int Key)
 {
 	struct Node* ptr=root;
 	struct Node* tail=NULL;
@@ -58,7 +58,7 @@ void inorder(struct Node* ptr)
 		inorder(ptr->rchild);
 	}
 }
-int CountTotalNodeInGivenTree(struct Node* ptr)
+int CountTotalNodeInGivenBinarySearchTree(struct Node* ptr)
 {
 	int x,y;
 	if(ptr==NULL)
@@ -213,7 +213,7 @@ int main()
 		   for(int i=0;i<n;i++)
 		   {
 			cout<<"Inserting to binary search tree:"<<Arr[i]<<endl;
-			create_bst(Arr[i]);
+			create_binarysearchtree(Arr[i]);
 		   }
 		   break;
 	    }
@@ -226,28 +226,28 @@ int main()
 		break;
 		case 3:
 		{
-		    cout<<"the total node in given binary serach tree is:";
-			cout<<CountTotalNodeInGivenTree(root);
+		        cout<<"the total node in given binary serach tree is:";
+			cout<<CountTotalNodeInGivenBinarySearchTree(root);
 			cout<<endl;	
 		}
 		break;
 		case 4:
 		{
-			cout<<"the zero degree node in given bst is:";
+			cout<<"the zero degree node in given binary search tree is:";
 			cout<<CountNodeWhoseDegreeIsZero(root);
 			cout<<endl;
 		}
 		break;
 		case 5:
 		{
-			cout<<"the one degree node in given bst is:";
+			cout<<"the one degree node in given binary search tree is:";
 			cout<<CountNodeWhoseDegreeIsOne(root);
 			cout<<endl;
 		}
 		break;
 		case 6:
 		{
-			cout<<"the two degree node in given bst is:";
+			cout<<"the two degree node in given binary search tree is:";
 			cout<<CountNodeWhoseDegreeIsTwo(root);
 			cout<<endl;
 		}
